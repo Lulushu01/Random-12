@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random 1-12</title>
+
+<style>
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#numero {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="numero">1</div>
+
+<button onclick="generar()">Generar número</button>
+
+<script>
+function generar() {
+    document.getElementById("numero").innerText =
+        Math.floor(Math.random() * 12) + 1;
+}
+</script>
+
+</body>
+</html>
